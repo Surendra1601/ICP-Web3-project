@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "feedblok_backend": {
+      "main": "src/feedblok_backend/main.mo",
+      "type": "motoko"
+    },
+    "feedblok_frontend": {
+      "dependencies": [
+        "feedblok_backend"
+      ],
+      "source": [
+        "src/feedblok_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "feedblok_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
